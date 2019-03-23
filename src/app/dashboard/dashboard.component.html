@@ -1,0 +1,104 @@
+<ion-header>
+      <ion-buttons slot="start" class="ion-float-left">
+        <ion-menu-button ></ion-menu-button>
+      </ion-buttons>
+      <h2 class="ion-float-right" style=" margin: 0px;padding-top: 4px;padding-right: 10px;color:#3880ff;">BilMovieBook</h2>
+  </ion-header>
+  <ion-content>
+     <!-- <ion-grid style="background:#333;color:#fff;text-align: center;">
+          <ion-row>
+              <ion-col size="3">
+                Kannada
+              </ion-col>
+              <ion-col size="3">
+                  Hindi
+                </ion-col>
+                <ion-col size="3">
+                    Telugu
+                  </ion-col>
+                  <ion-col size="3">
+                      Tamil
+                    </ion-col>
+            </ion-row>
+      </ion-grid>-->
+
+
+    <ion-slides [options]="slideOpts" #mySlider (ionSlidesDidLoad)="slidesDidLoad(mySlider)" autoplay="5000" loop="true" speed="5000" pager="true">
+        <ion-slide>
+            <ion-img src="/assets/uri1.jpg"></ion-img>
+           
+        </ion-slide>
+        <ion-slide>
+            <ion-img src="/assets/kgf1.jpg"></ion-img>
+            
+        </ion-slide>
+        <ion-slide>
+            <ion-img src="/assets/uri1.jpg"></ion-img>
+            
+        </ion-slide>
+      </ion-slides>
+
+<ion-grid>
+  <ion-row>
+    <ion-col size="6">
+
+            <ion-img src="/assets/uri1.jpg"></ion-img>
+            <h2 style="color:#3880ff;"> URI </h2>
+            <h3 style="columns: #3880ff;margin-top: 0;">Hindi</h3>
+            <ion-button style="margin-top: 25px;" shape="round" expand="small" (click)="payment()">Book Now </ion-button>
+
+    </ion-col>
+    <ion-col size="6">
+
+            <ion-img src="/assets/kgf1.jpg"></ion-img>
+            <h2 style="color:#3880ff;">KGF</h2>
+            <h3 style="columns: #3880ff;margin-top: 0;">Kannada</h3>
+                <ion-button style="margin-top: 25px;" shape="round" expand="small" (click)="payment()">Book Now </ion-button>
+   
+      </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+  <!--    <ion-card padding>
+          <ion-img src="/assets/uri.jpg"></ion-img>
+          <h2 style="color:#3880ff;"> URI The Surgical Strike</h2>
+          <h3 style="columns: #3880ff;margin-top: 0;">Hindi</h3>
+          <ion-button style="margin-top: 25px;" shape="round" expand="full" (click)="payment()">Book Now </ion-button>
+                </ion-card> 
+
+    <ion-card padding>
+    <ion-img src="/assets/kgf.jpg"></ion-img>
+    <h2 style="color:#3880ff;">KGF</h2>
+    <h3 style="columns: #3880ff;margin-top: 0;">Kannada|Telugu|Hindi</h3>
+        <ion-button style="margin-top: 25px;" shape="round" expand="full" (click)="payment()">Book Now </ion-button>
+          </ion-card> -->
+<ion-card>
+  <h2 style="color:#3880ff;">Offer Section</h2>
+
+          <ion-slides  [options]="slideOpts" #mySlider2 (ionSlidesDidLoad2)="slidesDidLoad2(mySlider2)" autoplay="5000" loop="true" speed="5000" pager="true">
+  
+            <ion-slide>
+                  <ion-img src="/assets/advertisement1.jpg"></ion-img>
+                 
+              </ion-slide>
+              <ion-slide>
+                  <ion-img src="/assets/advertisement2.jpg"></ion-img>
+                  
+              </ion-slide>
+              <ion-slide>
+                  <ion-img src="/assets/advertisement3.jpg"></ion-img>
+                  
+              </ion-slide>
+              <ion-slide>
+                  <ion-img src="/assets/advertisement4.jpg"></ion-img>
+                  
+              </ion-slide>
+            </ion-slides>
+          
+          </ion-card>
+          
+
+  </ion-content>
+  
+  

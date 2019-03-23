@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-buttons slot="start" class="ion-float-left">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <h2 class="ion-float-right" style=" margin: 0px;padding-top: 4px;padding-right: 10px;color:#3880ff;">BilMovieBook</h2>
+</ion-header>
+
+
+  <ion-content padding class="ion-justify-content-center">
+      <h2 style="color:#fff;">Sign up</h2>
+    <ion-card>
+      <ion-item>
+          <ion-input placeholder="First Name" [(ngModel)]="firstname"></ion-input>
+        </ion-item><br>
+    <ion-item>
+            <ion-input placeholder="Last Name" [(ngModel)]="lastname"></ion-input>
+          </ion-item><br>
+          <ion-item>
+              <ion-input placeholder="Email Address" [(ngModel)]="emailaddress"></ion-input>
+            </ion-item><br>
+            <ion-button shape="round" expand="full" (click)="dashBoard()"><b>Get Started</b></ion-button>
+            
+          </ion-card>  
+  </ion-content>
+  
+  

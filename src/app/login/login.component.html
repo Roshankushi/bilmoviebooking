@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-buttons slot="start" class="ion-float-left">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <h2 class="ion-float-right" style=" margin: 0px;padding-top: 4px;padding-right: 10px;color:#3880ff;">BilMovieBook</h2>
+</ion-header>
+<ion-content padding class="ion-justify-content-center">
+    <h2 style="color:#fff;">Log in and get  10% off for Movie tickets </h2>
+  <ion-card>
+  <ion-item>
+          <ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
+        </ion-item><br>
+        <ion-item>
+          <ion-input placeholder="Password" [(ngModel)]="password"></ion-input>
+          </ion-item><br>
+          <ion-button shape="round" expand="full" (click)="dashBoard()"><b>SIGN IN</b></ion-button>
+          <p class="ion-float-right" style="color:#fff;" (click)="forgotPassword()">Forgot Password</p><br>
+          <p class="ion-float-left" style="color:#fff;padding-right: 10px;">Don't have an account?</p> <p (click)="signIn()"class="ion-float-left" style="color:#fff;">Sign Up</p>
+        </ion-card>  
+</ion-content>
+
